@@ -1,0 +1,33 @@
+<div class="position-sticky pt-3">
+    <ul class="nav flex-column">
+        {% if is_granted('ROLE_SUPERADMIN') %}
+        <li class="nav-item">
+                <span data-feather="file"></span>
+            </a>
+        </li>
+        {% endif %}
+        <li class="nav-item">
+                            <span data-feather="shopping-cart"></span>
+            </a>
+        </li>
+        <li class="nav-item">
+                <span data-feather="aperture"></span>
+            </a>
+        </li>
+        <li class="nav-item">
+                <span data-feather="award"></span>
+            </a>
+        </li>
+        <li class="nav-item">
+                <span data-feather="check-circle"></span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_admin_usuario_index') }}">
+                <span data-feather="filter"></span>
+                Usuarios
+            </a>
+        </li>
+    </ul>
+
+ </div>
